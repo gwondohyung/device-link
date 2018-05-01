@@ -1,0 +1,111 @@
+{
+  "groups": [
+    {
+      "name": "application",
+      "type": "org.edgexfoundry.device.virtual.config.ApplicationProperties",
+      "sourceType": "org.edgexfoundry.device.virtual.config.ApplicationProperties"
+    },
+    {
+      "name": "default.schedule",
+      "type": "org.edgexfoundry.device.virtual.domain.SimpleSchedule",
+      "sourceType": "org.edgexfoundry.device.virtual.domain.SimpleSchedule"
+    },
+    {
+      "name": "default.scheduleEvent",
+      "type": "org.edgexfoundry.device.virtual.domain.SimpleScheduleEvent",
+      "sourceType": "org.edgexfoundry.device.virtual.domain.SimpleScheduleEvent"
+    },
+    {
+      "name": "default.watcher",
+      "type": "org.edgexfoundry.device.virtual.domain.SimpleWatcher",
+      "sourceType": "org.edgexfoundry.device.virtual.domain.SimpleWatcher"
+    },
+    {
+      "name": "service",
+      "type": "org.edgexfoundry.device.virtual.config.DeviceServiceProperties",
+      "sourceType": "org.edgexfoundry.device.virtual.config.DeviceServiceProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "application.auto-cleanup",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.edgexfoundry.device.virtual.config.ApplicationProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "application.auto-create-device",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.edgexfoundry.device.virtual.config.ApplicationProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "application.collection-frequency",
+      "type": "java.lang.Integer",
+      "sourceType": "org.edgexfoundry.device.virtual.config.ApplicationProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "application.device-profile-paths",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "org.edgexfoundry.device.virtual.config.ApplicationProperties"
+    },
+    {
+      "name": "default.watcher.identifier",
+      "type": "java.util.Map<java.lang.String,java.lang.String[]>",
+      "sourceType": "org.edgexfoundry.device.virtual.domain.SimpleWatcher"
+    },
+    {
+      "name": "default.watcher.identifiers",
+      "type": "java.util.List<java.util.Map<java.lang.String,java.lang.String>>",
+      "sourceType": "org.edgexfoundry.device.virtual.domain.SimpleWatcher"
+    },
+    {
+      "name": "service.admin-state",
+      "type": "org.edgexfoundry.domain.meta.AdminState",
+      "sourceType": "org.edgexfoundry.device.virtual.config.DeviceServiceProperties"
+    },
+    {
+      "name": "service.callback",
+      "type": "java.lang.String",
+      "sourceType": "org.edgexfoundry.device.virtual.config.DeviceServiceProperties"
+    },
+    {
+      "name": "service.device-service",
+      "type": "org.edgexfoundry.domain.meta.DeviceService",
+      "sourceType": "org.edgexfoundry.device.virtual.config.DeviceServiceProperties"
+    },
+    {
+      "name": "service.host",
+      "type": "java.lang.String",
+      "sourceType": "org.edgexfoundry.device.virtual.config.DeviceServiceProperties"
+    },
+    {
+      "name": "service.labels",
+      "type": "java.lang.String[]",
+      "sourceType": "org.edgexfoundry.device.virtual.config.DeviceServiceProperties"
+    },
+    {
+      "name": "service.name",
+      "type": "java.lang.String",
+      "sourceType": "org.edgexfoundry.device.virtual.config.DeviceServiceProperties"
+    },
+    {
+      "name": "service.operating-state",
+      "type": "org.edgexfoundry.domain.meta.OperatingState",
+      "sourceType": "org.edgexfoundry.device.virtual.config.DeviceServiceProperties"
+    },
+    {
+      "name": "service.port",
+      "type": "java.lang.Integer",
+      "sourceType": "org.edgexfoundry.device.virtual.config.DeviceServiceProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "service.protocol",
+      "type": "org.edgexfoundry.domain.meta.Protocol",
+      "sourceType": "org.edgexfoundry.device.virtual.config.DeviceServiceProperties"
+    }
+  ],
+  "hints": []
+}
