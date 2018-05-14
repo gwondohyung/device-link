@@ -26,7 +26,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.net.SocketException;
+
 import org.edgexfoundry.device.virtual.data.ObjectStore;
+import org.edgexfoundry.device.virtual.service.UDPServer;
+
 import org.edgexfoundry.device.virtual.handler.VirtualHandler;
 import org.edgexfoundry.support.logging.client.EdgeXLogger;
 import org.edgexfoundry.support.logging.client.EdgeXLoggerFactory;
@@ -38,16 +42,50 @@ public class ServiceController {
 	private final static EdgeXLogger logger = EdgeXLoggerFactory.getEdgeXLogger(ServiceController.class);
 	
 	@Autowired
+	UDPServer udp;
+	
+	@Autowired
 	ObjectStore objects;
 	
 	@Autowired
 	VirtualHandler handler;
 
-	@RequestMapping(path = "/debug/transformData/{transformData}", method = RequestMethod.GET)
-	public @ResponseBody String setTransformData(@PathVariable Boolean transformData) {
-		logger.info("Setting transform data to: " + transformData);
-		objects.setTransformData(transformData);
-		return "Set transform data to: " + transformData;
+//	@RequestMapping(path = "/debug/transformData/{transformData}", method = RequestMethod.GET)
+//	public @ResponseBody String setTransformData(@PathVariable Boolean transformData) {
+//		logger.info("Setting transform data to: " + transformData);
+//		objects.setTransformData(transformData);
+//		System.out.println(transformData);
+//		System.out.println(objects.getTransformData());
+//		return "Set transform data to: " + transformData;
+//	}
+	
+	@RequestMapping(path = "/link/device/temperature/{data}", method = RequestMethod.GET)
+	public @ResponseBody String setTempData(@PathVariable String data) throws SocketException {
+		logger.info("Device Temperature: " + data);
+		System.out.println(data);
+		udp.setTempData(data);
+		System.out.println(data);
+		udp.UDPServerStart();
+//		try {
+//			
+//		} catch (SocketException e) {
+//			// TODO Auto-generated catch block
+//			//e.printStackTrace();
+//		}
+		return "Device Temperature: " + udp.getTempData();
+	}
+	
+	@RequestMapping(path = "/link/device/udpserverstart", method = RequestMethod.GET)
+	public @ResponseBody String UDPServerStart() throws SocketException {
+		udp.UDPServerStart();
+		
+		return "UDP server start: ";
+	}
+	
+	@RequestMapping(path = "/link/device/udpserverstop", method = RequestMethod.GET)
+	public @ResponseBody String UDPServerStop() {
+		udp.UDPServerStop();
+		return "UDP server stop: ";
 	}
 	
 	@RequestMapping(path = "/discovery", method = RequestMethod.POST)

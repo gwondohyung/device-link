@@ -30,20 +30,17 @@
     {
       "name": "application.auto-cleanup",
       "type": "java.lang.Boolean",
-      "sourceType": "org.edgexfoundry.device.virtual.config.ApplicationProperties",
-      "defaultValue": false
+      "sourceType": "org.edgexfoundry.device.virtual.config.ApplicationProperties"
     },
     {
       "name": "application.auto-create-device",
       "type": "java.lang.Boolean",
-      "sourceType": "org.edgexfoundry.device.virtual.config.ApplicationProperties",
-      "defaultValue": false
+      "sourceType": "org.edgexfoundry.device.virtual.config.ApplicationProperties"
     },
     {
       "name": "application.collection-frequency",
       "type": "java.lang.Integer",
-      "sourceType": "org.edgexfoundry.device.virtual.config.ApplicationProperties",
-      "defaultValue": 0
+      "sourceType": "org.edgexfoundry.device.virtual.config.ApplicationProperties"
     },
     {
       "name": "application.device-profile-paths",
@@ -98,8 +95,7 @@
     {
       "name": "service.port",
       "type": "java.lang.Integer",
-      "sourceType": "org.edgexfoundry.device.virtual.config.DeviceServiceProperties",
-      "defaultValue": 0
+      "sourceType": "org.edgexfoundry.device.virtual.config.DeviceServiceProperties"
     },
     {
       "name": "service.protocol",

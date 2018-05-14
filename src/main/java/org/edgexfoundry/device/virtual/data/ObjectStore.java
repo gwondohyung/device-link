@@ -53,7 +53,7 @@ public class ObjectStore {
 	@Autowired
 	@Lazy
 	private ObjectTransform transform;
-
+	
 	@Autowired
 	private CoreDataMessageHandler processor;
 

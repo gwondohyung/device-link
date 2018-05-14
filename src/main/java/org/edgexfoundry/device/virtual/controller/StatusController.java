@@ -28,7 +28,7 @@ import org.edgexfoundry.support.logging.client.EdgeXLogger;
 import org.edgexfoundry.support.logging.client.EdgeXLoggerFactory;
 
 @RestController
-@RequestMapping("/api/v1/hello")//
+@RequestMapping("/api/v1/ping")//
 public class StatusController {
 
 	private final static EdgeXLogger logger = EdgeXLoggerFactory.getEdgeXLogger(StatusController.class);

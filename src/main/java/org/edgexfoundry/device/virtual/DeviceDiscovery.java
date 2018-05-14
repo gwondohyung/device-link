@@ -52,6 +52,7 @@ public class DeviceDiscovery {
 	
 	//TODO Generate protocol dynamically
 	private Protocol protocol = Protocol.MAC;
+//	private Protocol protocol = Protocol.OTHER;
 
 	private ProvisionWatcher deviceMatches(Map<String, String> device) {
 		for (ProvisionWatcher watcher: watchers.getWatchers()) {
