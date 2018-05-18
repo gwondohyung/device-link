@@ -47,6 +47,12 @@ import java.net.SocketException;
 
 @SuppressWarnings("unused")
 @Repository
+<<<<<<< HEAD
+public class UDPServer {
+	private DatagramSocket socket; 
+	
+	private boolean isStillRun = true;
+=======
 public class UDPServer extends Thread {
 	private DatagramSocket socket; 
 	
@@ -54,10 +60,23 @@ public class UDPServer extends Thread {
       super(); 
       socket = new DatagramSocket(9999); 
 	}
+>>>>>>> 991d6b627f65e699ba6610a175d8f8434fe7fd9f
 	
 	@Value("${service.tempData:20}")
 	private String tempData;
 
+<<<<<<< HEAD
+	public UDPServer() throws SocketException { 
+		super(); 
+	    socket = new DatagramSocket(9999); 
+	}
+	
+	public void setStillRun(boolean isStillRun) {
+		this.isStillRun = isStillRun;
+	}
+	
+=======
+>>>>>>> 991d6b627f65e699ba6610a175d8f8434fe7fd9f
 	public String getTempData() {
 		return tempData;
 	}
@@ -66,6 +85,19 @@ public class UDPServer extends Thread {
 		tempData = temperature;
 	}
 	
+<<<<<<< HEAD
+//	public void UDPServerStop() {
+//		System.out.println("Stop test");
+//	}
+
+	public void serverStart() {
+        while (true) { 
+            try {
+            	if (!isStillRun) {
+            		break;
+            	}
+        		System.out.println("Start test----2");
+=======
 	public void UDPServerStart() throws SocketException{
 		System.out.println("Start test");
 		run();
@@ -86,19 +118,26 @@ public class UDPServer extends Thread {
             	
         		System.out.println("Start test----2");
                 server.start(); 
+>>>>>>> 991d6b627f65e699ba6610a175d8f8434fe7fd9f
                 byte[] inbuf = new byte[256];
                 DatagramPacket packet = new DatagramPacket(inbuf, inbuf.length); 
                 socket.receive(packet);
                 System.out.println("received length : " + packet.getLength() + ", received data : " + new String(packet.getData(), 0, packet.getLength()));
+<<<<<<< HEAD
+=======
                 
+>>>>>>> 991d6b627f65e699ba6610a175d8f8434fe7fd9f
             } 
             catch (IOException e) { 
                 //e.printStackTrace(); 
             } 
         } 
+<<<<<<< HEAD
+=======
     } 
 
 	public void UDPServerStop() {
 		System.out.println("Stop test");
+>>>>>>> 991d6b627f65e699ba6610a175d8f8434fe7fd9f
 	}
 }

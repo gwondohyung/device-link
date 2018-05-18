@@ -65,7 +65,11 @@ public class ServiceController {
 		System.out.println(data);
 		udp.setTempData(data);
 		System.out.println(data);
+<<<<<<< HEAD
+//		udp.UDPServerStart();
+=======
 		udp.UDPServerStart();
+>>>>>>> 991d6b627f65e699ba6610a175d8f8434fe7fd9f
 //		try {
 //			
 //		} catch (SocketException e) {
@@ -77,14 +81,26 @@ public class ServiceController {
 	
 	@RequestMapping(path = "/link/device/udpserverstart", method = RequestMethod.GET)
 	public @ResponseBody String UDPServerStart() throws SocketException {
+<<<<<<< HEAD
+		udp.setStillRun(false);
+		//state
+		udp.setStillRun(true);
+		udp.serverStart();
+=======
 		udp.UDPServerStart();
 		
+>>>>>>> 991d6b627f65e699ba6610a175d8f8434fe7fd9f
 		return "UDP server start: ";
 	}
 	
 	@RequestMapping(path = "/link/device/udpserverstop", method = RequestMethod.GET)
+<<<<<<< HEAD
+	public @ResponseBody String UDPServerStop() throws InterruptedException {
+		udp.setStillRun(false);
+=======
 	public @ResponseBody String UDPServerStop() {
 		udp.UDPServerStop();
+>>>>>>> 991d6b627f65e699ba6610a175d8f8434fe7fd9f
 		return "UDP server stop: ";
 	}
 	

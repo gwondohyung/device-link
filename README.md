@@ -36,7 +36,7 @@ Once the database has been started, initialize the database with EdgeX Foundry a
 
 Once complete, the database can now be stopped.  In the next step, you restart the database with authentication turned on.  You do not need to re-initialize the database again.
 
-1. <code>/usr/local/bin/mongod --dbpath "/data/db/" —auth</code>
+1. <code>/usr/local/bin/mongod --dbpath "/data/db/" --auth</code>
    - never stop it.
 
 
