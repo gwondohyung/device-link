@@ -47,25 +47,16 @@ import java.net.SocketException;
 
 @SuppressWarnings("unused")
 @Repository
-<<<<<<< HEAD
+
 public class UDPServer {
 	private DatagramSocket socket; 
 	
 	private boolean isStillRun = true;
-=======
-public class UDPServer extends Thread {
-	private DatagramSocket socket; 
-	
-	public UDPServer() throws SocketException { 
-      super(); 
-      socket = new DatagramSocket(9999); 
-	}
->>>>>>> 991d6b627f65e699ba6610a175d8f8434fe7fd9f
-	
+
 	@Value("${service.tempData:20}")
 	private String tempData;
 
-<<<<<<< HEAD
+
 	public UDPServer() throws SocketException { 
 		super(); 
 	    socket = new DatagramSocket(9999); 
@@ -75,8 +66,6 @@ public class UDPServer extends Thread {
 		this.isStillRun = isStillRun;
 	}
 	
-=======
->>>>>>> 991d6b627f65e699ba6610a175d8f8434fe7fd9f
 	public String getTempData() {
 		return tempData;
 	}
@@ -85,7 +74,7 @@ public class UDPServer extends Thread {
 		tempData = temperature;
 	}
 	
-<<<<<<< HEAD
+
 //	public void UDPServerStop() {
 //		System.out.println("Stop test");
 //	}
@@ -97,47 +86,15 @@ public class UDPServer extends Thread {
             		break;
             	}
         		System.out.println("Start test----2");
-=======
-	public void UDPServerStart() throws SocketException{
-		System.out.println("Start test");
-		run();
-		
-  
-	}
-	
-	public void run() { 
-		UDPServer server = null;
-		try {
-			server = new UDPServer();
-		} catch (SocketException e1) {
-			// TODO Auto-generated catch block
-			//e1.printStackTrace();
-		} 
-        while (true) { 
-            try {
-            	
-        		System.out.println("Start test----2");
-                server.start(); 
->>>>>>> 991d6b627f65e699ba6610a175d8f8434fe7fd9f
+
                 byte[] inbuf = new byte[256];
                 DatagramPacket packet = new DatagramPacket(inbuf, inbuf.length); 
                 socket.receive(packet);
                 System.out.println("received length : " + packet.getLength() + ", received data : " + new String(packet.getData(), 0, packet.getLength()));
-<<<<<<< HEAD
-=======
-                
->>>>>>> 991d6b627f65e699ba6610a175d8f8434fe7fd9f
             } 
             catch (IOException e) { 
                 //e.printStackTrace(); 
             } 
         } 
-<<<<<<< HEAD
-=======
-    } 
-
-	public void UDPServerStop() {
-		System.out.println("Stop test");
->>>>>>> 991d6b627f65e699ba6610a175d8f8434fe7fd9f
 	}
 }
