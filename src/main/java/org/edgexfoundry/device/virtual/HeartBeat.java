@@ -28,6 +28,7 @@ import org.edgexfoundry.support.logging.client.EdgeXLoggerFactory;
 @EnableScheduling
 public class HeartBeat {
 
+	
 	private final static EdgeXLogger logger = EdgeXLoggerFactory.getEdgeXLogger(HeartBeat.class);
 
 	@Scheduled(fixedRateString = "${heart.beat.time}")

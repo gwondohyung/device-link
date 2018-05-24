@@ -28,12 +28,12 @@ import org.edgexfoundry.support.logging.client.EdgeXLogger;
 import org.edgexfoundry.support.logging.client.EdgeXLoggerFactory;
 
 @RestController
-@RequestMapping("/api/v1/ping")//
+@RequestMapping("/api/v1/ping")
 public class StatusController {
 
 	private final static EdgeXLogger logger = EdgeXLoggerFactory.getEdgeXLogger(StatusController.class);
 	
-	public final static String PING_RESPONSE = "Hello, EdgeX from LINK-lab at KoreaTech..."; 
+	public final static String PING_RESPONSE = "pong"; 
 
 	@RequestMapping(method = RequestMethod.GET)
 	public @ResponseBody String ping() {

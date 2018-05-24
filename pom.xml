@@ -10,10 +10,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.edgexfoundry</groupId>
-	<artifactId>device-link</artifactId>
+	<artifactId>device-virtual</artifactId>
 	<version>0.5.0-SNAPSHOT</version>
-	<name>device-link</name>
-	<description>EdgeX Foundry device-link</description>
+	<name>device-virtual</name>
+	<description>EdgeX Foundry device-virtual</description>
 
 	<properties>
 		<core-domain.version>0.5.0-SNAPSHOT</core-domain.version>

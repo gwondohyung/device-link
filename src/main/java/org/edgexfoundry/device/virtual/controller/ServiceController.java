@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * @microservice:  device-sdk-tools
- * @author: Tyler Cox, Dell
+ * @microservice:  device-link
+ * @author: LINK-lab
  * @version: 1.0.0
  *******************************************************************************/
 package org.edgexfoundry.device.virtual.controller;
@@ -50,14 +50,7 @@ public class ServiceController {
 	@Autowired
 	VirtualHandler handler;
 
-//	@RequestMapping(path = "/debug/transformData/{transformData}", method = RequestMethod.GET)
-//	public @ResponseBody String setTransformData(@PathVariable Boolean transformData) {
-//		logger.info("Setting transform data to: " + transformData);
-//		objects.setTransformData(transformData);
-//		System.out.println(transformData);
-//		System.out.println(objects.getTransformData());
-//		return "Set transform data to: " + transformData;
-//	}
+//	List<Object> Packet = new ArrayList<Object>();
 	
 	@RequestMapping(path = "/link/device/temperature/{data}", method = RequestMethod.GET)
 	public @ResponseBody String setTempData(@PathVariable String data) throws SocketException {
@@ -65,29 +58,29 @@ public class ServiceController {
 		System.out.println(data);
 		udp.setTempData(data);
 		System.out.println(data);
-//		udp.UDPServerStart();
-//		try {
-//			
-//		} catch (SocketException e) {
-//			// TODO Auto-generated catch block
-//			//e.printStackTrace();
-//		}
 		return "Device Temperature: " + udp.getTempData();
 	}
 	
 	@RequestMapping(path = "/link/device/udpserverstart", method = RequestMethod.GET)
-	public @ResponseBody String UDPServerStart() throws SocketException {
+	public @ResponseBody Object UDPServerStart() throws SocketException {
+		logger.info("UDP server start: " + "received length : " + udp.getPacketLength() + ", received data : " + udp.getPacketMessage());
+
 		udp.setStillRun(false);
-		//state
 		udp.setStillRun(true);
 		udp.serverStart();
-		return "UDP server start: ";
+//		System.out.println("UDP server start: " + "received length : " + udp.getPacketLength() + ", received data : " + udp.getPacketMessage());
+		return "UDP server started successfully";
 	}
 	
 	@RequestMapping(path = "/link/device/udpserverstop", method = RequestMethod.GET)
-	public @ResponseBody String UDPServerStop() throws InterruptedException {
+	public @ResponseBody Object UDPServerStop() throws InterruptedException {
 		udp.setStillRun(false);
-		return "UDP server stop: ";
+		return "UDP server stoped successfully";
+//		return "UDP server stop: ";
+//		Packet.add("UDP server stop: " + "received length : " + udp.getPacketLength() + ", received data : " + udp.getPacketMessage());
+//		System.out.println("UDP server stop: " + "received length : " + udp.getPacketLength() + ", received data : " + udp.getPacketMessage());
+//		System.out.println(Packet);
+//		return Packet;
 	}
 	
 	@RequestMapping(path = "/discovery", method = RequestMethod.POST)

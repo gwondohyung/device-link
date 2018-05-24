@@ -27,24 +27,22 @@ import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
 @EnableAsync
-// TODO 11: To enable consul support, uncomment the following line and the 
-// import, then add the application.properties files to docker-edgex-core-config-seed
 @EnableDiscoveryClient
 public class Application {
-    public static ConfigurableApplicationContext ctx;
+	public static ConfigurableApplicationContext ctx;
 
-    public static void main(String[] args) {
-        ctx = SpringApplication.run(Application.class, args);
-        String welcomeMsg = ctx.getEnvironment().getProperty("app.open.msg");
-        System.out.println(welcomeMsg);
-    }
-    
-    public static void exit(int rc) {
-        if(ctx != null) {
-            SpringApplication.exit(ctx, () -> rc);
-        } else {
-            System.exit(rc);
-        }
-    }
+	public static void main(String[] args) {
+		ctx = SpringApplication.run(Application.class, args);
+		String welcomeMsg = ctx.getEnvironment().getProperty("app.open.msg");
+		System.out.println(welcomeMsg);
+	}
+	
+	public static void exit(int rc) {
+		if(ctx != null) {
+			SpringApplication.exit(ctx, () -> rc);
+		} else {
+			System.exit(rc);
+		}
+	}
 
 }

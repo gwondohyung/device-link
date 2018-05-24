@@ -18,7 +18,8 @@
 # FROM java:8
 FROM maven:3.3-jdk-8-alpine
 
-COPY docker-files/pom.xml .
+# COPY docker-files/pom.xml .
+COPY ./pom.xml .
 
 RUN mvn dependency:copy -q
 
@@ -34,9 +35,10 @@ ENV APP_PORT=49990
 
 #copy JAR and property files to the image
 COPY --from=0 *.jar $APP_DIR/$APP
-COPY docker-files/*.properties $APP_DIR/
-COPY bacnet_sample_profiles $APP_DIR/bacnet_sample_profiles/
-COPY modbus_sample_profiles $APP_DIR/modbus_sample_profiles/
+# COPY docker-files/*.properties $APP_DIR/
+COPY ./*.properties $APP_DIR/
+# COPY bacnet_sample_profiles $APP_DIR/bacnet_sample_profiles/
+# COPY modbus_sample_profiles $APP_DIR/modbus_sample_profiles/
 
 #expose core data port
 EXPOSE $APP_PORT
