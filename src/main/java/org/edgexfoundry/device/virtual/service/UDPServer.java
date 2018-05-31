@@ -13,98 +13,154 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * @microservice:  device-link
- * @author: LINK-lab
+ * @microservice:  device-sdk-tools
+ * @author: Tyler Cox, Dell
  * @version: 1.0.0
  *******************************************************************************/
 package org.edgexfoundry.device.virtual.service;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
-
-import org.springframework.beans.factory.annotation.Autowired;
+import java.util.*;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.scheduling.annotation.Async;
-import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.stereotype.Repository;
-
-import org.edgexfoundry.device.virtual.ObjectTransform;
-import org.edgexfoundry.device.virtual.domain.VirtualObject;
-import org.edgexfoundry.device.virtual.handler.CoreDataMessageHandler;
-import org.edgexfoundry.domain.core.Reading;
-import org.edgexfoundry.domain.meta.Device;
-import org.edgexfoundry.domain.meta.OperatingState;
-import org.edgexfoundry.domain.meta.PropertyValue;
-import org.edgexfoundry.domain.meta.ResourceOperation;
-import org.edgexfoundry.exception.controller.NotFoundException;
-import com.google.gson.JsonObject;
 import java.io.IOException; 
 import java.net.DatagramPacket; 
 import java.net.DatagramSocket; 
 import java.net.SocketException;
+import java.net.InetAddress;
+import java.util.concurrent.ThreadLocalRandom;
 
-@Configuration
-@EnableAsync
 @SuppressWarnings("unused")
 @Repository
 
 public class UDPServer {
-	private DatagramSocket socket; 
-	private int PacketLength;
-	private String PacketMessage;
-	private boolean isStillRun = true;
+	private boolean isStillPingPongAlive = true;
+	private boolean isStillReceiverAlive = true;
+	private boolean isStillSenderAlive = true;
 
+	private String packetData;
 	@Value("${service.tempData:20}")
 	private String tempData;
 
-	public UDPServer() throws SocketException { 
-		super(); 
-	    socket = new DatagramSocket(9999); 
+	DatagramSocket pingPongSocket;
+	DatagramSocket receiverSocket;
+	DatagramSocket senderSocket;
+
+	public UDPServer() throws SocketException {
+		super();
+		pingPongSocket = new DatagramSocket(7777); // Server의 IP
+		receiverSocket = new DatagramSocket(8888);
+		senderSocket = new DatagramSocket();
 	}
 	
-	public void setStillRun(boolean isStillRun) {
-		this.isStillRun = isStillRun;
-	}
-	
-	public String getTempData() {
-		return tempData;
+	public void setPingPongState(boolean isStillPingPongAlive) {
+		this.isStillPingPongAlive = isStillPingPongAlive;
 	}
 
-	public void setTempData(String temperature) {
-		tempData = temperature;
+	public void setReceiverState(boolean isStillReceiverAlive) {
+		this.isStillReceiverAlive = isStillReceiverAlive;
 	}
 
-	public void setPacketStatus(int PacketLength, String PacketMessage) { this.PacketLength=PacketLength; this.PacketMessage = PacketMessage; }
-
-	public String getPacketMessage() { return PacketMessage; }
-
-	public int getPacketLength() { return PacketLength; }
-
-	public void serverStart() {
-        while (true) { 
-            try {
-            	if (!isStillRun) break;
-
-//        		System.out.println("UDP server start: ");
-                byte[] inbuf = new byte[256];
-                DatagramPacket packet = new DatagramPacket(inbuf, inbuf.length); 
-                socket.receive(packet);
-                PacketLength = packet.getLength();
-                PacketMessage = new String(packet.getData(), 0, packet.getLength());
-				setPacketStatus(PacketLength, PacketMessage);
-                System.out.println("received length : " + PacketLength + ", received data : " + PacketMessage);
-
-				if (!isStillRun) break;
-            } 
-            catch (IOException e) { 
-                //e.printStackTrace(); 
-            } 
-        } 
+	public void setSenderState(boolean isStillSenderAlive) {
+		this.isStillSenderAlive = isStillSenderAlive;
 	}
 
+	@Async
+	public void startPingPong() {
+		try {
+			System.out.println("UDP Ping Pong started successfully.");
+			while (true) {
+				if (!isStillPingPongAlive) {
+					break;
+				}
+				byte[] inbuf = new byte[256];
+				DatagramPacket receivePacket = new DatagramPacket(inbuf, inbuf.length);
+				pingPongSocket.receive(receivePacket);
+				System.out.println("EdgeX received a packet: " +
+						new String(receivePacket.getData(), 0, receivePacket.getLength()));
+
+				packetData = new String(receivePacket.getData(), 0, receivePacket.getLength());
+				StringTokenizer stringTokenizer = new StringTokenizer(packetData, "+");
+
+				int receivedInt1 = Integer.parseInt(stringTokenizer.nextToken());
+				int receivedInt2 = Integer.parseInt(stringTokenizer.nextToken());
+				String newData = String.valueOf(receivedInt1 + receivedInt2);
+
+				InetAddress clientIPAddress = receivePacket.getAddress();
+				int clientPort = receivePacket.getPort();
+
+				DatagramPacket packet_to_rpi = new DatagramPacket(
+						newData.getBytes(),
+						newData.getBytes().length,
+						clientIPAddress,
+						clientPort
+				); // client의 IP와 Port
+
+				pingPongSocket.send(packet_to_rpi);
+				System.out.println("EdgeX sent a packet: " + new String(packet_to_rpi.getData(), 0, packet_to_rpi.getLength()));
+				System.out.println();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+			isStillPingPongAlive = false;
+		}
+	}
+
+	@Async
+	public void startReceiver() {
+		try {
+			System.out.println("UDP Receiver started successfully.");
+			while (true) {
+				if (!isStillReceiverAlive) {
+					break;
+				}
+				byte[] inbuf = new byte[256];
+				DatagramPacket receivePacket = new DatagramPacket(inbuf, inbuf.length);
+				receiverSocket.receive(receivePacket);
+				System.out.println("EdgeX received a packet: " +
+						new String(receivePacket.getData(), 0, receivePacket.getLength()));
+				System.out.println();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+			isStillReceiverAlive = false;
+		}
+	}
+
+	@Async
+	public void startSender(String clientAddr, int clientPort) {
+		try {
+			System.out.println("UDP Sender started successfully.");
+			while (true) {
+				if (!isStillSenderAlive) {
+					break;
+				}
+				int randomNum = ThreadLocalRandom.current().nextInt(0, 10000 + 1);
+
+				String newData = String.valueOf(randomNum);
+
+				InetAddress clientIPAddress = InetAddress.getByName(clientAddr);
+
+				DatagramPacket packet_to_rpi = new DatagramPacket(
+						newData.getBytes(),
+						newData.getBytes().length,
+						clientIPAddress,
+						clientPort
+				); // client의 IP와 Port
+
+				senderSocket.send(packet_to_rpi);
+				System.out.println("EdgeX sent a packet: " + new String(packet_to_rpi.getData(), 0, packet_to_rpi.getLength()));
+				System.out.println();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+			isStillSenderAlive = false;
+		}
+	}
 }

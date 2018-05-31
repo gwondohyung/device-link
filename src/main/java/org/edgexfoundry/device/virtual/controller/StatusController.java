@@ -18,6 +18,10 @@
  * @version: 1.0.0
  *******************************************************************************/
 package org.edgexfoundry.device.virtual.controller;
+//
+import org.edgexfoundry.device.virtual.service.UDPServer;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -29,15 +33,26 @@ import org.edgexfoundry.support.logging.client.EdgeXLoggerFactory;
 
 @RestController
 @RequestMapping("/api/v1/ping")
+//@Async
 public class StatusController {
 
 	private final static EdgeXLogger logger = EdgeXLoggerFactory.getEdgeXLogger(StatusController.class);
 	
-	public final static String PING_RESPONSE = "pong"; 
+	public final static String PING_RESPONSE = "pong";
+//	public final static String UDP_START_RESPONSE = "UDP server started successfully.";
+
+//	@Autowired
+//	UDPServer udp;
 
 	@RequestMapping(method = RequestMethod.GET)
 	public @ResponseBody String ping() {
 		logger.debug("Device service pinged - yes its up!");
 		return PING_RESPONSE;
 	}
+
+//	@RequestMapping(path = "/link/device/udpserverstart", method = RequestMethod.GET)
+//	public @ResponseBody String serverStart() {
+//		logger.debug("UDP server Start!");
+//		return UDP_START_RESPONSE;
+//	}
 }
