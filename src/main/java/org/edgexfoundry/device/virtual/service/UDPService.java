@@ -33,7 +33,11 @@ import java.util.concurrent.ThreadLocalRandom;
 @SuppressWarnings("unused")
 @Repository
 
+<<<<<<< HEAD
 public class UDPServer {
+=======
+public class UDPService {
+>>>>>>> b2696c843404551e7ff746f7ff1c2ad2cb3e9d60
 	private boolean isStillPingPongAlive = true;
 	private boolean isStillReceiverAlive = true;
 	private boolean isStillSenderAlive = true;
@@ -46,7 +50,11 @@ public class UDPServer {
 	DatagramSocket receiverSocket;
 	DatagramSocket senderSocket;
 
+<<<<<<< HEAD
 	public UDPServer() throws SocketException {
+=======
+	public UDPService() throws SocketException {
+>>>>>>> b2696c843404551e7ff746f7ff1c2ad2cb3e9d60
 		super();
 		pingPongSocket = new DatagramSocket(7777); // Server의 IP
 		receiverSocket = new DatagramSocket(8888);
@@ -108,17 +116,63 @@ public class UDPServer {
 		}
 	}
 
+<<<<<<< HEAD
 	@Async
 	public void startReceiver() {
+=======
+//	@Async
+//	public void startReceiver() {
+//		try {
+//			System.out.println("UDP Receiver started successfully.");
+//			while (true) {
+//				if (!isStillReceiverAlive) {
+//					break;
+//				}
+//				byte[] inbuf = new byte[256];
+//				DatagramPacket receivePacket = new DatagramPacket(inbuf, inbuf.length);
+//				receiverSocket.receive(receivePacket);
+//				System.out.println("EdgeX received a packet: " +
+//						new String(receivePacket.getData(), 0, receivePacket.getLength()));
+//				System.out.println();
+//			}
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//			isStillReceiverAlive = false;
+//		}
+//	}
+
+	@Async
+	public void startReceiver(String clientAddr, int clientPort) {
+>>>>>>> b2696c843404551e7ff746f7ff1c2ad2cb3e9d60
 		try {
 			System.out.println("UDP Receiver started successfully.");
 			while (true) {
 				if (!isStillReceiverAlive) {
 					break;
 				}
+<<<<<<< HEAD
 				byte[] inbuf = new byte[256];
 				DatagramPacket receivePacket = new DatagramPacket(inbuf, inbuf.length);
 				receiverSocket.receive(receivePacket);
+=======
+				InetAddress clientIPAddress = InetAddress.getByName(clientAddr); // For Sending To Application
+
+				byte[] inbuf = new byte[256];
+				DatagramPacket receivePacket = new DatagramPacket(inbuf, inbuf.length);
+				receiverSocket.receive(receivePacket);
+
+				String newData = new String(receivePacket.getData(), 0, receivePacket.getLength());
+				DatagramPacket packet_to_rpi = new DatagramPacket(
+						newData.getBytes(),
+						newData.getBytes().length,
+						clientIPAddress,
+						clientPort
+				); // client의 IP와 Port
+
+				senderSocket.send(packet_to_rpi); // Send to Application
+>>>>>>> b2696c843404551e7ff746f7ff1c2ad2cb3e9d60
 				System.out.println("EdgeX received a packet: " +
 						new String(receivePacket.getData(), 0, receivePacket.getLength()));
 				System.out.println();

@@ -18,7 +18,11 @@
 # FROM java:8
 FROM maven:3.3-jdk-8-alpine
 
+<<<<<<< HEAD
 COPY docker-files/pom.xml .
+=======
+COPY /pom.xml .
+>>>>>>> b2696c843404551e7ff746f7ff1c2ad2cb3e9d60
 
 RUN mvn dependency:copy -q
 
@@ -28,15 +32,24 @@ MAINTAINER Cloud Tsai <Cloud.Tsai@Dell.com>
 RUN apk --update add openjdk8-jre
 
 # environment variables
+<<<<<<< HEAD
 ENV APP_DIR=/edgex/edgex-device-virtual
 ENV APP=device-virtual.jar
+=======
+ENV APP_DIR=/edgex/edgex-device-udp
+ENV APP=device-udp.jar
+>>>>>>> b2696c843404551e7ff746f7ff1c2ad2cb3e9d60
 ENV APP_PORT=49990
 
 #copy JAR and property files to the image
 COPY --from=0 *.jar $APP_DIR/$APP
+<<<<<<< HEAD
 COPY docker-files/*.properties $APP_DIR/
 COPY bacnet_sample_profiles $APP_DIR/bacnet_sample_profiles/
 COPY modbus_sample_profiles $APP_DIR/modbus_sample_profiles/
+=======
+COPY /*.properties $APP_DIR/
+>>>>>>> b2696c843404551e7ff746f7ff1c2ad2cb3e9d60
 
 #expose core data port
 EXPOSE $APP_PORT

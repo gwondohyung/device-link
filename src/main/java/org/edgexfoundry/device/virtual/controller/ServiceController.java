@@ -26,8 +26,12 @@ import org.springframework.web.bind.annotation.*;
 import java.net.SocketException;
 
 import org.edgexfoundry.device.virtual.data.ObjectStore;
+<<<<<<< HEAD
 import org.edgexfoundry.device.virtual.service.UDPServer;
 import org.edgexfoundry.device.virtual.service.UDPClient;
+=======
+import org.edgexfoundry.device.virtual.service.UDPService;
+>>>>>>> b2696c843404551e7ff746f7ff1c2ad2cb3e9d60
 
 import org.edgexfoundry.device.virtual.handler.VirtualHandler;
 import org.edgexfoundry.support.logging.client.EdgeXLogger;
@@ -39,10 +43,14 @@ public class ServiceController {
 	private final static EdgeXLogger logger = EdgeXLoggerFactory.getEdgeXLogger(ServiceController.class);
 
 	@Autowired
+<<<<<<< HEAD
 	UDPServer udp;
 
 	@Autowired
 	UDPClient udp_client;
+=======
+	UDPService udp;
+>>>>>>> b2696c843404551e7ff746f7ff1c2ad2cb3e9d60
 
 	@Autowired
 	ObjectStore objects;
@@ -70,14 +78,35 @@ public class ServiceController {
 	}
 
 
+<<<<<<< HEAD
+=======
+//	/***************************************************/
+//	/* UDP Receiver */
+//	@RequestMapping(path = "link/device/udp_receiver_start", method = RequestMethod.GET)
+//	public @ResponseBody
+//	String UDPReceiverStart() throws Exception {
+//		udp.setReceiverState(false);
+//		udp.setReceiverState(true);
+//		udp.startReceiver();
+//		return "UDP Receiver started successfully.\n";
+//	}
+
+>>>>>>> b2696c843404551e7ff746f7ff1c2ad2cb3e9d60
 	/***************************************************/
 	/* UDP Receiver */
 	@RequestMapping(path = "link/device/udp_receiver_start", method = RequestMethod.GET)
 	public @ResponseBody
+<<<<<<< HEAD
 	String UDPReceiverStart() throws Exception {
 		udp.setReceiverState(false);
 		udp.setReceiverState(true);
 		udp.startReceiver();
+=======
+	String UDPReceiverStart(@RequestParam String clientAddr, @RequestParam int clientPort) throws Exception {
+		udp.setReceiverState(false);
+		udp.setReceiverState(true);
+		udp.startReceiver(clientAddr, clientPort);
+>>>>>>> b2696c843404551e7ff746f7ff1c2ad2cb3e9d60
 		return "UDP Receiver started successfully.\n";
 	}
 

@@ -14,7 +14,11 @@
 # limitations under the License.
 #
 ###############################################################################
+<<<<<<< HEAD
 # Docker image for Virtual Device Service
+=======
+# Docker image for udp Device Service
+>>>>>>> b2696c843404551e7ff746f7ff1c2ad2cb3e9d60
 FROM arm64v8/alpine:3.6
 MAINTAINER Federico Claramonte <fede.claramonte@caviumnetworks.com>
 
@@ -29,8 +33,13 @@ FROM arm64v8/alpine:3.6
 RUN apk --update add openjdk8-jre
 
 # environment variables
+<<<<<<< HEAD
 ENV APP_DIR=/edgex/edgex-device-virtual
 ENV APP=device-virtual.jar
+=======
+ENV APP_DIR=/edgex/edgex-device-udp
+ENV APP=device-udp.jar
+>>>>>>> b2696c843404551e7ff746f7ff1c2ad2cb3e9d60
 ENV APP_PORT=49990
 
 #copy JAR and property files to the image

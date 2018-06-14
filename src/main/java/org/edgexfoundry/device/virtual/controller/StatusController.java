@@ -19,7 +19,11 @@
  *******************************************************************************/
 package org.edgexfoundry.device.virtual.controller;
 //
+<<<<<<< HEAD
 import org.edgexfoundry.device.virtual.service.UDPServer;
+=======
+import org.edgexfoundry.device.virtual.service.UDPService;
+>>>>>>> b2696c843404551e7ff746f7ff1c2ad2cb3e9d60
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 
@@ -42,7 +46,11 @@ public class StatusController {
 //	public final static String UDP_START_RESPONSE = "UDP server started successfully.";
 
 //	@Autowired
+<<<<<<< HEAD
 //	UDPServer udp;
+=======
+//	UDPService udp;
+>>>>>>> b2696c843404551e7ff746f7ff1c2ad2cb3e9d60
 
 	@RequestMapping(method = RequestMethod.GET)
 	public @ResponseBody String ping() {

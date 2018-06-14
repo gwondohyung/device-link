@@ -1,0 +1,303 @@
+2018-06-07 00:03:22.576  INFO 67414 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-07 00:03:22.661  INFO 67414 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2018-06-07 00:03:22.662  INFO 67414 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-07 00:03:22.664  INFO 67414 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-07 00:03:22.897  INFO 67414 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-06-07 00:03:23.000  INFO 67414 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-06-07 00:03:23.239  INFO 67414 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-07 00:03:23.535  INFO 67414 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-07 00:03:23.547  INFO 67414 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-07 00:03:26.534  WARN 67414 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-07 00:03:26.534  INFO 67414 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-07 00:03:26.541  WARN 67414 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-07 00:03:26.542  INFO 67414 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-07 00:21:13.347  INFO 67414 --- [Thread-25] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-07 00:21:13.355  INFO 67414 --- [Thread-25] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-07 11:27:58.793  INFO 72519 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-07 11:27:58.872  INFO 72519 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2018-06-07 11:27:58.874  INFO 72519 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-07 11:27:58.876  INFO 72519 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-07 11:27:59.156  INFO 72519 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-06-07 11:27:59.240  INFO 72519 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-06-07 11:27:59.530  INFO 72519 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-07 11:27:59.770  INFO 72519 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-07 11:27:59.779  INFO 72519 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-07 11:28:02.170  WARN 72519 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-07 11:28:02.170  INFO 72519 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-07 11:28:02.176  WARN 72519 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-07 11:28:02.176  INFO 72519 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-07 11:39:16.462  INFO 72519 --- [Thread-23] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-07 11:39:16.476  INFO 72519 --- [Thread-23] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-07 11:44:04.592  INFO 72719 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-07 11:44:04.647  INFO 72719 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2018-06-07 11:44:04.649  INFO 72719 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-07 11:44:04.650  INFO 72719 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-07 11:44:04.790  INFO 72719 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-06-07 11:44:04.888  INFO 72719 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-06-07 11:44:05.102  INFO 72719 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-07 11:44:05.279  INFO 72719 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-07 11:44:05.287  INFO 72719 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-07 11:44:07.419  WARN 72719 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-07 11:44:07.419  INFO 72719 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-07 11:44:07.423  WARN 72719 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-07 11:44:07.423  INFO 72719 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-07 12:58:35.976 ERROR 72719 --- [http-nio-49990-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at org.edgexfoundry.device.virtual.controller.UpdateController.getCallback(UpdateController.java:56) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_161]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) ~[spring-web-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110) ~[spring-webmvc-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:832) ~[spring-webmvc-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:743) ~[spring-webmvc-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:961) ~[spring-webmvc-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:895) ~[spring-webmvc-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:967) ~[spring-webmvc-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:858) ~[spring-webmvc-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:843) ~[spring-webmvc-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) ~[tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) ~[tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.0.37.jar:8.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) ~[tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) ~[tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) ~[tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) ~[tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:89) ~[spring-web-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) ~[tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) ~[tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) ~[spring-web-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) ~[tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) ~[tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121) ~[spring-web-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) ~[tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) ~[tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) ~[tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106) [tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502) [tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:528) [tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1100) [tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:687) [tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1520) [tomcat-embed-core-8.0.37.jar:8.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1476) [tomcat-embed-core-8.0.37.jar:8.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.0.37.jar:8.0.37]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161]
+
+2018-06-07 13:14:09.970 ERROR 72719 --- [Thread-21] o.e.d.v.service.impl.CleanupServiceImpl  : Something is going wrong when cleaning up the virtual device data
+
+javax.ws.rs.ProcessingException: RESTEASY004655: Unable to invoke request
+	at org.jboss.resteasy.client.jaxrs.engines.ApacheHttpClient4Engine.invoke(ApacheHttpClient4Engine.java:287) ~[resteasy-client-3.0.13.Final.jar:3.0.13.Final]
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.invoke(ClientInvocation.java:436) ~[resteasy-client-3.0.13.Final.jar:3.0.13.Final]
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invoke(ClientInvoker.java:102) ~[resteasy-client-3.0.13.Final.jar:3.0.13.Final]
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientProxy.invoke(ClientProxy.java:64) ~[resteasy-client-3.0.13.Final.jar:3.0.13.Final]
+	at com.sun.proxy.$Proxy113.delete(Unknown Source) ~[na:na]
+	at org.edgexfoundry.controller.impl.DeviceServiceClientImpl.delete(DeviceServiceClientImpl.java:136) ~[core-metadata-client-0.5.0-SNAPSHOT.jar:na]
+	at org.edgexfoundry.device.virtual.service.impl.CleanupServiceImpl.removeDeviceService(CleanupServiceImpl.java:161) ~[classes/:na]
+	at org.edgexfoundry.device.virtual.service.impl.CleanupServiceImpl.doCleanup(CleanupServiceImpl.java:111) ~[classes/:na]
+	at org.edgexfoundry.device.virtual.Initializer.cleanup(Initializer.java:63) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_161]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:354) [spring-beans-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:319) [spring-beans-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:153) [spring-beans-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:243) [spring-beans-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:978) [spring-beans-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:985) [spring-beans-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1006) [spring-context-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:982) [spring-context-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:901) [spring-context-4.2.8.RELEASE.jar:4.2.8.RELEASE]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_161]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_161]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_161]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_161]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_161]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_161]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117) ~[core-metadata-client-0.5.0-SNAPSHOT.jar:na]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[core-metadata-client-0.5.0-SNAPSHOT.jar:na]
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304) ~[core-metadata-client-0.5.0-SNAPSHOT.jar:na]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[core-metadata-client-0.5.0-SNAPSHOT.jar:na]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[core-metadata-client-0.5.0-SNAPSHOT.jar:na]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882) ~[core-metadata-client-0.5.0-SNAPSHOT.jar:na]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82) ~[core-metadata-client-0.5.0-SNAPSHOT.jar:na]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[core-metadata-client-0.5.0-SNAPSHOT.jar:na]
+	at org.jboss.resteasy.client.jaxrs.engines.ApacheHttpClient4Engine.invoke(ApacheHttpClient4Engine.java:283) ~[resteasy-client-3.0.13.Final.jar:3.0.13.Final]
+	... 24 common frames omitted
+
+2018-06-07 13:14:09.982  INFO 72719 --- [Thread-21] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-07 13:14:10.137  INFO 72719 --- [Thread-21] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-09 21:06:48.449  INFO 91209 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-09 21:06:48.599  INFO 91209 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2018-06-09 21:06:48.601  INFO 91209 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-09 21:06:48.603  INFO 91209 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-09 21:06:48.826  INFO 91209 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-06-09 21:06:48.911  INFO 91209 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-06-09 21:06:49.171  INFO 91209 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-09 21:06:49.425  INFO 91209 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-09 21:06:49.437  INFO 91209 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-09 21:06:53.976 ERROR 91209 --- [main] o.e.d.virtual.domain.VirtualAttribute    : Cannot Construct VirtualAttribute: null
+2018-06-09 21:06:53.977 ERROR 91209 --- [main] o.e.d.virtual.domain.VirtualAttribute    : Cannot Construct VirtualAttribute: null
+2018-06-09 21:06:55.023 ERROR 91209 --- [main] o.e.d.virtual.domain.VirtualAttribute    : Cannot Construct VirtualAttribute: null
+2018-06-09 21:06:55.023 ERROR 91209 --- [main] o.e.d.virtual.domain.VirtualAttribute    : Cannot Construct VirtualAttribute: null
+2018-06-09 21:06:55.523 ERROR 91209 --- [main] o.e.d.virtual.domain.VirtualAttribute    : Cannot Construct VirtualAttribute: null
+2018-06-09 21:06:55.524 ERROR 91209 --- [main] o.e.d.virtual.domain.VirtualAttribute    : Cannot Construct VirtualAttribute: null
+2018-06-09 21:06:56.465  WARN 91209 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-09 21:06:56.465  INFO 91209 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-09 21:06:56.471  WARN 91209 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-09 21:06:56.472  INFO 91209 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-09 21:07:04.552  INFO 91209 --- [Thread-32] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-09 21:07:04.556  INFO 91209 --- [Thread-32] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-09 21:08:01.445  INFO 91242 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-09 21:08:01.502  INFO 91242 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2018-06-09 21:08:01.503  INFO 91242 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-09 21:08:01.504  INFO 91242 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-09 21:08:01.634  INFO 91242 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-06-09 21:08:01.773  INFO 91242 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-06-09 21:08:01.985  INFO 91242 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-09 21:08:02.175  INFO 91242 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-09 21:08:02.184  INFO 91242 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-09 21:08:04.602  WARN 91242 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-09 21:08:04.602  INFO 91242 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-09 21:08:04.608  WARN 91242 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-09 21:08:04.608  INFO 91242 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-09 21:33:59.506  INFO 91242 --- [Thread-21] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-09 21:33:59.524  INFO 91242 --- [Thread-21] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-09 21:34:36.600  INFO 91804 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-09 21:34:36.772  INFO 91804 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2018-06-09 21:34:36.781  INFO 91804 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-09 21:34:36.784  INFO 91804 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-09 21:34:37.557  INFO 91804 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-06-09 21:34:37.731  INFO 91804 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-06-09 21:34:38.110  INFO 91804 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-09 21:34:38.692  INFO 91804 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-09 21:34:38.715  INFO 91804 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-09 21:34:42.998  WARN 91804 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-09 21:34:42.999  INFO 91804 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-09 21:34:43.006  WARN 91804 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-09 21:34:43.007  INFO 91804 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-09 21:38:30.485  INFO 91804 --- [Thread-46] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-09 21:38:30.497  INFO 91804 --- [Thread-46] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-09 21:38:40.338  INFO 91873 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-09 21:38:40.429  INFO 91873 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2018-06-09 21:38:40.430  INFO 91873 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-09 21:38:40.431  INFO 91873 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-09 21:38:40.576  INFO 91873 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-06-09 21:38:40.672  INFO 91873 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-06-09 21:38:40.911  INFO 91873 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-09 21:38:41.108  INFO 91873 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-09 21:38:41.133  INFO 91873 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-09 21:38:43.821  WARN 91873 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-09 21:38:43.821  INFO 91873 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-09 21:38:43.826  WARN 91873 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-09 21:38:43.826  INFO 91873 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-09 21:39:37.927  INFO 91873 --- [Thread-23] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-09 21:39:38.013  INFO 91873 --- [Thread-23] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-09 21:39:55.629  INFO 91894 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-09 21:39:55.776  INFO 91894 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2018-06-09 21:39:55.777  INFO 91894 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-09 21:39:55.779  INFO 91894 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-09 21:39:55.991  INFO 91894 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-06-09 21:39:56.071  INFO 91894 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-06-09 21:39:56.321  INFO 91894 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-09 21:39:56.568  INFO 91894 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-09 21:39:56.580  INFO 91894 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-09 21:39:59.369  WARN 91894 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-09 21:39:59.369  INFO 91894 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-09 21:39:59.373  WARN 91894 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-09 21:39:59.374  INFO 91894 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-09 22:14:28.106  INFO 91894 --- [Thread-31] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-09 22:14:28.135  INFO 91894 --- [Thread-31] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-09 22:14:43.870  INFO 92452 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-09 22:14:43.981  INFO 92452 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2018-06-09 22:14:43.984  INFO 92452 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-09 22:14:43.987  INFO 92452 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-09 22:14:44.301  INFO 92452 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-06-09 22:14:44.432  INFO 92452 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-06-09 22:14:44.802  INFO 92452 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-09 22:14:45.290  INFO 92452 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-09 22:14:45.309  INFO 92452 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-09 22:14:49.888  WARN 92452 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-09 22:14:49.888  INFO 92452 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-09 22:14:49.895  WARN 92452 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-09 22:14:49.896  INFO 92452 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-09 22:38:20.407  INFO 92452 --- [Thread-40] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-09 22:38:20.450  INFO 92452 --- [Thread-40] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-11 13:32:57.393  INFO 2232 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-11 13:32:57.538  INFO 2232 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2018-06-11 13:32:57.540  INFO 2232 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-11 13:32:57.541  INFO 2232 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-11 13:32:57.884  INFO 2232 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-06-11 13:32:57.959  INFO 2232 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-06-11 13:32:58.276  INFO 2232 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-11 13:32:58.457  INFO 2232 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-11 13:32:58.467  INFO 2232 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-11 13:32:59.768 ERROR 2232 --- [main] o.e.device.virtual.BaseService           : unable to establish connection to metadata java.net.ConnectException: Connection refused (Connection refused) RESTEASY004655: Unable to invoke request
+2018-06-11 13:33:09.791 ERROR 2232 --- [main] o.e.device.virtual.BaseService           : unable to establish connection to metadata java.net.ConnectException: Connection refused (Connection refused) RESTEASY004655: Unable to invoke request
+2018-06-11 13:35:06.901  INFO 2313 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-11 13:35:06.998  INFO 2313 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2018-06-11 13:35:07.000  INFO 2313 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-11 13:35:07.003  INFO 2313 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-11 13:35:07.270  INFO 2313 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-06-11 13:35:07.371  INFO 2313 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-06-11 13:35:07.647  INFO 2313 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-11 13:35:07.943  INFO 2313 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-11 13:35:07.957  INFO 2313 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-11 13:35:09.827 ERROR 2313 --- [main] o.e.device.virtual.BaseService           : unable to establish connection to metadata org.apache.http.NoHttpResponseException: localhost:48081 failed to respond RESTEASY004655: Unable to invoke request
+2018-06-11 13:35:55.839  INFO 2322 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-11 13:35:55.927  INFO 2322 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2018-06-11 13:35:55.928  INFO 2322 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-11 13:35:55.929  INFO 2322 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-11 13:35:56.071  INFO 2322 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-06-11 13:35:56.178  INFO 2322 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-06-11 13:35:56.389  INFO 2322 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-11 13:35:56.562  INFO 2322 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-11 13:35:56.571  INFO 2322 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-11 13:35:59.564  WARN 2322 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-11 13:35:59.564  INFO 2322 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-11 13:35:59.569  WARN 2322 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-11 13:35:59.569  INFO 2322 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
